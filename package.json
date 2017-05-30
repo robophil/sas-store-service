@@ -1,0 +1,21 @@
+{
+  "name": "sas-store-service",
+  "version": "0.0.1",
+  "description": "A service for store management",
+  "main": "index.js",
+  "dependencies": {
+    "cote": "^0.13.2",
+    "waterline": "^0.11.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "micro-service",
+    "node.js",
+    "javascript"
+  ],
+  "author": "oghenerobo@gmail.com",
+  "license": "MIT"
+}
