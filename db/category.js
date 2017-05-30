@@ -9,6 +9,7 @@ var category = Waterline.Collection.extend({
 
     attributes: {
 
+        //model
         store: {
             model: 'store'
         },
@@ -18,20 +19,21 @@ var category = Waterline.Collection.extend({
             required: true
         },
 
+        url: {
+            type: 'string',
+            required: true,
+            unique: true
+        },
+
         hasSubcategory: {
             type: 'boolean',
             defaultsTo: false
         },
 
+        //collection
         subcategories: {
             collection: 'subcategory',
             via: 'category'
-        },
-
-        url: {
-            type: 'string',
-            required: true,
-            unique: true
         }
     }
 });
