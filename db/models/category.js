@@ -1,9 +1,12 @@
-var Waterline = require('waterline');
+const Waterline = require('waterline')
+const config = require('../config')
 
 // Define your collection (aka model) 
-var category = Waterline.Collection.extend({
+module.exports = Waterline.Collection.extend(Object.assign({
 
     tableName: 'category',
+
+    identity: 'category',
 
     schema: true,
 
@@ -36,4 +39,4 @@ var category = Waterline.Collection.extend({
             via: 'category'
         }
     }
-});
+}, config))
