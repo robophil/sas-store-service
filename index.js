@@ -6,9 +6,8 @@ db.start().then(models => {
         model = model[0].toUpperCase() + model.substr(1)
 
         //make models global
-        global.model = models.collections[key]
+        global[model] = models.collections[key]
     }
-    console.log("Models can now be accessed globally as you would in sails.js")
 }).catch(err => {
     console.log(err.message)
     console.log(err.error)
