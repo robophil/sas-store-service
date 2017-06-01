@@ -1,2 +1,8 @@
 # sas-store-service
-A microservice for managing a store.
+Microservice for managing store, part of the SHOP-ANY-SHOP solution.
+
+# install
+`git clone && npm install`
+
+# run
+`npm start`
