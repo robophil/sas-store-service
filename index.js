@@ -32,7 +32,7 @@ function loadServices() {
             files.map(file => "./" + file.substr(0, file.length - 3)).forEach(file => {
                 //load microservice
                 require(file)
-                console.log(`Service ${file} has been loaded`)
+                console.log(`Service "${file}" has been loaded`)
             })
 
             return resolve("All services has been loaded")
