@@ -50,7 +50,7 @@ module.exports = {
             // Start Waterline passing adapters in
             orm.initialize(config, function (err, models) {
                 if (err) return reject({error: err, message: 'could not initialize waterline orm after loading models'})
-                console.log('OK')
+                console.log('Connection to databse successful !!!!')
                 return resolve(models)
             })
         })
