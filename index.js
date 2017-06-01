@@ -1,10 +1,10 @@
-//try to establish connection to the database
 const db = require('./db')
 const glob = require("glob")
 
 //config options for glob
 var options = {}
 
+//try to establish connection to the database
 db.start().then(models => {
     for (var key in models.collections) {
         var model = key.toLocaleLowerCase()
