@@ -14,7 +14,8 @@ module.exports = Waterline.Collection.extend(Object.assign({
 
         //model
         store: {
-            model: 'store'
+            model: 'store',
+            required: true
         },
 
         name: {
