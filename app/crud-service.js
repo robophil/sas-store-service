@@ -1,7 +1,7 @@
 const cote = require('cote')
 
 const storeResponder = new cote.Responder({
-    name: 'SAS-STORE-SERVICE: store-responder ',
+    name: 'SAS-STORE-SERVICE: crud-responder ',
     namespace: '',
     respondsTo: ['store.create', 'store.update', 'store.get', 'store.delete']
 })
